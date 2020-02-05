@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>06-klik-hop</title>
 
+    <!--   stylet direkte i html i stedet for css -->
     <style>
         .firkant {
             background-color: green;
@@ -30,14 +31,16 @@
 </head>
 
 <body>
+    <!--   der er en firkant og en cirkel der vises i browseren-->
     <div class="firkant"></div>
     <div class="cirkel"></div>
 
     <script>
+//        url til billeder
         let firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`;
         let cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`;
 
-
+//        dette gør at DOM loader korrekt (ligesom windowLoadStart vi lærte i 1. semester)
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
