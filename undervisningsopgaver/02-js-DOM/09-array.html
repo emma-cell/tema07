@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-array</title>
+
+    <style>
+        body {
+            color: burlywood;
+        }
+
+        #display {
+            width: 20vw;
+            height: 40vw;
+            border: 1px solid silver;
+            margin: 7vw;
+            padding: 1vw;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="display"></div>
+
+
+    <script>
+        let playliste = ["Just Say Yes", "Boys Don´t Cry", "Take A Chance On Me", "Morning Mood", "Bennie And The Jets", "Space Oddity", "Hiphopopotamus Vs. Rhymenoceros", "L´amour Fou", "Halfway Home", "Teardrop"];
+        playliste.forEach(sang => {
+            document.querySelector("#display").innerHTML += `${sang} <br>`;
+        })
+
+    </script>
+</body>
+
+</html>
