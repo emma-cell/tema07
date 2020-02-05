@@ -64,6 +64,12 @@
 
             function stop() {
                 firkant.removeEventListener("click", flyt);
+                //                det næste får baggrunden til at skifte farev gradvist
+                firkant.style.transition = "1.5s";
+                firkant.style.backgroundColor = "red";
+//                det næste her får cirklen til at forsvinde når der trykkes på den samtidig med at firkanten skifter farve
+                cirkel.style.transition = "1.5s";
+                cirkel.style.transform = "scale(0)";
             }
         }
 
