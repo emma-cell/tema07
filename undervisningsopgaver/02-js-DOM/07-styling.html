@@ -57,8 +57,11 @@
             cirkel.addEventListener("click", stop);
 
             function flyt() {
+//                denne er udgangspunktet
                 let firkantStart = firkant.innerHTML;
+//                denne tager udgangspunktet og erstatter det med rød
                 firkant.innerHTML = cirkel.innerHTML;
+//                denne sætter firkanten til udgangspunktet igen
                 cirkel.innerHTML = firkantStart;
             }
 
